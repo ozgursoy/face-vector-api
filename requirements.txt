@@ -2,4 +2,8 @@ flask
 flask_restful
 opencv-python
 Pillow
-dlib
+face_recognition_models
+Click>=6.0
+dlib>=19.3.0
+numpy
+scipy>=0.17.0
