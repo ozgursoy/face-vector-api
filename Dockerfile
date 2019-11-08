@@ -34,8 +34,8 @@ RUN cd ~ && \
 COPY . /app
 WORKDIR /app
 RUN cd /app && \
-    pip3 install -r requirements.txt && \
-    python3 setup.py install
+    pip3 install -r requirements.txt
+RUN pip3 install --no-dependencies face_recognition face_recognition_models    
 
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
