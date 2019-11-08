@@ -54,8 +54,6 @@ class getEncodes(Resource):
 
 
 api.add_resource(getEncodes, '/encodes/get')
-app.run(port=5005)
-"""
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
-"""
