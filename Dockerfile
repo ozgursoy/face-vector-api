@@ -33,8 +33,9 @@ RUN cd ~ && \
 
 COPY . /app
 WORKDIR /app
-RUN cd /root/face_recognition && \
+RUN cd /app && \
     pip3 install -r requirements.txt && \
     python3 setup.py install
-ENTRYPOINT ["python"]
+
+ENTRYPOINT ["python3"]
 CMD ["app.py"]
